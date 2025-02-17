@@ -1,7 +1,5 @@
 # Drum Kit
 
-![Drum Kit](images/drum.png)
-
 Drum Kit, kullanıcıların çeşitli davul seslerini çalmasına olanak tanıyan etkileşimli bir web uygulamasıdır. Kullanıcılar, ekrandaki düğmelere tıklayarak veya klavye tuşlarına basarak müzik yapabilirler. Eğlenceli bir deneyim sunan bu uygulama, hem müzik tutkunları hem de yeni başlayanlar için idealdir.
 
 ## Özellikler
