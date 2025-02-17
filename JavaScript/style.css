@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0e7e9, #cfd8dc); /* Soft gri ve mavi tonları */
+    font-family: 'Montserrat', sans-serif; /* Modern bir font */
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #2c3e50; /* Koyu mavi tonları */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #555; /* Gri */
+    line-height: 1.5; /* Satır yüksekliği */
+}
+
+.language-button {
+    background-color: #3498db; /* Soft mavi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.language-button i {
+    margin-right: 8px; /* Bayrak simgesi ile metin arasında boşluk */
+}
+
+.language-button:hover {
+    background-color: #2980b9; /* Daha koyu mavi */
+}
+
+.drum-kit {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.drum {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: #a2c2e0; /* Soft mavi tonu */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s, background-color 0.3s;
+    margin: 15px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 600; /* Kalın yazı */
+}
+
+.drum:hover {
+    background-color: #8ab8e0; /* Daha soft mavi */
+}
+
+.drum:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555; /* Gri */
+    font-style: italic;
+}
+
+.drum-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.waveform {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    animation: wave-animation 0.5s ease forwards;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 600px) {
+    .drum {
+        width: 80px;
+        height: 80px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .description, .instructions {
+        font-size: 1em;
+    }
+}

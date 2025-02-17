@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Davul Seti</h1>
+        <p class="description" id="description">Bu uygulama, çeşitli davul seslerini çalmanıza olanak tanır. Düğmelere tıklayarak veya klavye tuşlarına basarak müzik yapabilirsiniz. Eğlenceli bir deneyim için hemen başlayın!</p>
+        
+        <button id="language-toggle" class="language-button">
+            <i class="fas fa-flag-usa"></i> English
+        </button>
+        
+        <div class="drum-kit">
+            <button class="drum" data-sound="sounds/boom.wav"><i class="fas fa-bomb"></i> Boom</button>
+            <button class="drum" data-sound="sounds/clap.wav"><i class="fas fa-clap"></i> Clap</button>
+            <button class="drum" data-sound="sounds/hihat.wav"><i class="fas fa-music"></i> Hi-Hat</button>
+            <button class="drum" data-sound="sounds/openhat.wav"><i class="fas fa-music"></i> Open Hat</button>
+            <button class="drum" data-sound="sounds/ride.wav"><i class="fas fa-drum"></i> Ride</button>
+            <button class="drum" data-sound="sounds/snare.wav"><i class="fas fa-drum"></i> Snare</button>
+            <button class="drum" data-sound="sounds/tink.wav"><i class="fas fa-drumstick-bite"></i> Tink</button>
+            <button class="drum" data-sound="sounds/tom.wav"><i class="fas fa-drum"></i> Tom</button>
+        </div>
+        <p class="instructions" id="instructions">Klavye ile de çalabilirsiniz: B, C, H, O, R, S, T</p>
+        <img src="images/drum.png" alt="Drum Kit" class="drum-image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
